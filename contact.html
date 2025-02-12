@@ -57,7 +57,16 @@
           <div class="hero-content">
             <h3 class="text-color-brand-copy">Contact Us</h3>
             <div class="w-form">
-              <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-4" data-wf-page-id="66398bea34c798a318d99a31" data-wf-element-id="fca6f5d8-744b-0155-de10-abf3941dbadd"><label for="name" class="field-label-5">Name</label><input class="text-field-5 w-input" maxlength="256" name="name" data-name="Name" placeholder="Type your name here..." type="text" id="name" required=""><label for="email" class="field-label-6">Email Address</label><input class="text-field-6 w-input" maxlength="256" name="email" data-name="Email" placeholder="Type your email here..." type="email" id="email" required=""><label for="field" class="field-label-7">Phone Number</label><input class="text-field-7 w-input" maxlength="256" name="field" data-name="Field" placeholder="Type your phone number here..." type="tel" id="field" required=""><label for="Message" class="field-label-8">Message</label><textarea required="" placeholder="Type your message here..." maxlength="5000" id="Message" name="Message" data-name="Message" class="textarea w-input"></textarea><input type="submit" data-wait="Please wait..." class="submit-button-3 w-button" value="Submit"></form>
+              <form id="contact-form">
+                <input type="hidden" name="contact_number">
+                <label>Your Name</label>
+                <input type="text" required name="user_name">
+                <label>Your Email</label>
+                <input type="email" required name="user_email">
+                <label>Message</label>
+                <input type="message" required name="message">
+                <input id="submit" type="submit" value="Send">
+              </form>
               <div class="w-form-done">
                 <div>Thank you! Your submission has been received!</div>
               </div>
