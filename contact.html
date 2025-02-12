@@ -59,13 +59,13 @@
             <div class="w-form">
               <form id="contact-form">
                 <input type="hidden" name="contact_number">
-                <label>Your Name</label>
-                <input type="text" required name="user_name">
-                <label>Your Email</label>
+                <label for="user_name" class="field-label-5">Your Name</label>
+                <input type="text" required name="user_name" class="text-field-5 w-input" maxlength="256" name="name" data-name="Name" placeholder="Type your name here..." id="name">
+                <label for="email" class="field-label-5">Your Email</label>
                 <input type="email" required name="user_email">
-                <label>Message</label>
-                <input type="message" required name="message">
-                <input id="submit" type="submit" value="Send">
+                <label for="message" class="field-label-5">Message</label>
+                <input type="message" required name="message" class="textarea w-input" >
+                <input type="submit" data-wait="Please wait..." class="submit-button-3 w-button" value="Submit">
               </form>
               <div class="w-form-done">
                 <div>Thank you! Your submission has been received!</div>
